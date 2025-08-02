@@ -1,9 +1,12 @@
 .border-container {
-    display: flex;
+    display: fixed;
     justify-content: center;
     align-items: center;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    top: 0;
+    left: 0;
     padding: 20px;
-    background-color: blue; /* Specific border color */
-    border-radius: 8px;
+    background-color: #FF474C ; /* Specific border color */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
