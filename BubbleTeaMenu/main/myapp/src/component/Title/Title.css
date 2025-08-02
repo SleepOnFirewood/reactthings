@@ -1,8 +1,8 @@
 /* Title Card Styling */
 .title-frame {
   position: fixed;
-  top: 20px;    /* Adjust the vertical distance from the top */
-  left: 20px;   /* Adjust the horizontal distance from the right */
+  top: 30%;   /* Adjust the vertical distance from the top */
+  left: 7.5%;   /* Adjust the horizontal distance from the right */
   background-color: #f0f0f0; /* Background color (white) */
   padding: 15px;
   border-radius: 8px;

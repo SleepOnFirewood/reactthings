@@ -3,19 +3,23 @@ import './App.css';
 import Border from './component/Border/borderFrame';
 import Card from './component/Card/Card';
 import Title from './component/Title/Title'
-import Top5Container from './component/Top5Container/Top5Container';
+import Top10Container from './component/Top10Container/Top10Container';
 
 function App() {
   return (
     <div className="App">
       <Border>
-      <Title
-          title="Recommended Top 5" 
-          variation="hot, cold, etc"
-      />
-      <Top5Container>
 
-      </Top5Container>
+        <Top10Container>
+          <Title
+          title ="Top 10 Favourites">
+          </Title>
+          {/* <Card 
+            title="Wintermelon Basil" 
+            description="Fresh winter melon puree blended with basil leaves."
+            price="$5.99"
+          /> */}
+        </Top10Container>
       </Border>
 
     </div>
