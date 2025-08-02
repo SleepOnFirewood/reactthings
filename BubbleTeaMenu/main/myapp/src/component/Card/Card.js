@@ -6,7 +6,7 @@ function Card(props) {
       <div className='card-frame'>
         {props.title && <h2>{props.title}</h2>}
         {props.description && <p>{props.description}</p>}
-        {props.price && <p>Price: ${props.price}</p>}
+        {props.price && <p>Price: {props.price}</p>}
       </div>
     );
   }
