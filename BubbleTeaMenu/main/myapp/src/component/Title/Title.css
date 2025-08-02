@@ -1,3 +1,4 @@
+/* Title Card Styling */
 .title-frame {
   position: fixed;
   top: 20px;    /* Adjust the vertical distance from the top */
@@ -6,7 +7,7 @@
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  z-index: 1001; /* Ensure it stays on top of other elements */
 }
 
 /* Add floating animation */

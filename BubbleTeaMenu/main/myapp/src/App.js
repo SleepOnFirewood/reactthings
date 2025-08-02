@@ -3,6 +3,7 @@ import './App.css';
 import Border from './component/Border/borderFrame';
 import Card from './component/Card/Card';
 import Title from './component/Title/Title'
+import Top5Container from './component/Top5Container/Top5Container';
 
 function App() {
   return (
@@ -12,16 +13,9 @@ function App() {
           title="Recommended Top 5" 
           variation="hot, cold, etc"
       />
-      <Card 
-          title="Wintermelon Basil" 
-          description="Fresh winter melon puree blended with basil leaves."
-          price="$5.99"
-        />
-      <Card 
-          title="Wintermelon Basil" 
-          description="Fresh winter melon puree blended with basil leaves."
-          price="$5.99"
-        />
+      <Top5Container>
+
+      </Top5Container>
       </Border>
 
     </div>
