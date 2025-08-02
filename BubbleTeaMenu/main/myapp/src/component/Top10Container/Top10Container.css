@@ -9,5 +9,5 @@
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensure it stays above other content */
-    height: 70%; /* Set height to half the viewport */
+    height: 80%; /* Set height to half the viewport */
 }
