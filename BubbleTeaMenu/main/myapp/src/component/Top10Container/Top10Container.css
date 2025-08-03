@@ -1,13 +1,9 @@
 .Top10Container-Frame {
-    position: fixed;
-    left: -20px;
-    top: 50%; /* Adjust this value to set your desired width */
-    transform: translateY(-50%);
-    width: 100%; /* Set your desired width */
-    background-color: #f0f0f0;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    width: 100%;
+    align-items: center;      /* Centers content vertically */
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 1000; /* Ensure it stays above other content */
-    height: 80%; /* Set height to half the viewport */
+    background: white;
+    height: 70vh;           /* Makes the container take full viewport height */
 }
