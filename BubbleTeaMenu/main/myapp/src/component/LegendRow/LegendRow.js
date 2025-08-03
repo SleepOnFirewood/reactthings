@@ -7,9 +7,9 @@ function LegendRow(props)
     return(
         <div className='LegendRow-Frame'>
             <div className="legend-item">
-                <FaSnowflake className="snowflake-blue"/>Cold</div>
+                <FaSnowflake size={30} className="snowflake-blue"/>Cold</div>
             <div className="legend-item">
-                <FaFire className="fire-red"/>Hot</div>
+                <FaFire size={30} className="fire-red"/>Hot</div>
         </div>
     );
 

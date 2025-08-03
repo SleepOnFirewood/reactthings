@@ -15,10 +15,37 @@
 .snowflake-blue {
     color: lightblue;
     display: block;
+    animation: snowflakeGlow 2s ease-in-out infinite;
+}
+
+@keyframes snowflakeGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #38bdf8);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
 }
 
 .fire-red {
     color: lightsalmon;
+    display: block;
+    animation: fireGlow 2s ease-in-out infinite;
+}
+
+@keyframes fireGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #f83838);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #f83838);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #f83838);
+    }
 }
 
 .legend-item {
