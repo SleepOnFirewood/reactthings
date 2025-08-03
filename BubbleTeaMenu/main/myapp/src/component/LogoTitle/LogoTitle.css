@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+
+.logotitle-frame {
+    position: absolute; /* Use absolute positioning */
+    top: 20px;         /* Distance from top of parent container */
+    left: 150px;        /* Distance from left of parent container */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;     /* Maximum width */
+    height: auto;         /* Height adjusts based on width */
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+}

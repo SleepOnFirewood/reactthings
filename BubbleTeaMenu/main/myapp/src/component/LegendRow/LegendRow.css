@@ -10,16 +10,65 @@
     flex-wrap: wrap;
     max-width: 100%;
     gap: 20px;
+    border-color: #5a1e84;
 }
+
+
 
 .snowflake-blue {
     color: lightblue;
     display: block;
+    animation: snowflakeGlow 2s ease-in-out infinite;
+}
+
+@keyframes snowflakeGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #38bdf8);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
 }
 
 .fire-red {
     color: lightsalmon;
+    display: block;
+    animation: fireGlow 2s ease-in-out infinite;
 }
+
+@keyframes fireGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #f83838);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #f83838);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #f83838);
+    }
+}
+
+.nonDairy {
+    color: rgb(66, 248, 187);
+    display: block;
+    animation: snowflakeGlow 2s ease-in-out infinite;
+}
+
+@keyframes greenGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #38f8a8);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #38f8a8);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #38f8a8);
+    }
+}
+
 
 .legend-item {
     display: flex;
