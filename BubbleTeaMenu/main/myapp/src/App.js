@@ -9,6 +9,7 @@ import Card from './component/Card/Card';
 import BottomCards from './component/BottomCards/BottomCards';
 import LegendRow from './component/LegendRow/LegendRow';
 import Logo from './component/Logo/Logo';
+import LogoTitle from './component/LogoTitle/LogoTitle';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       <Border>
         <Logo image='/images/bubbleteabrewerlogo.png'/>
+        <LogoTitle>BubbleTea Brewers</LogoTitle>
         <Top10Container>
           <Title>
               <span>Top 10</span>
