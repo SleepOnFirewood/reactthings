@@ -1,6 +1,6 @@
 import React from 'react';
 import './LegendRow.css'
-import { FaSnowflake, FaFire } from 'react-icons/fa';
+import { FaSnowflake, FaFire, FaLeaf } from 'react-icons/fa';
 
 function LegendRow(props)
 {
@@ -10,6 +10,8 @@ function LegendRow(props)
                 <FaSnowflake size={30} className="snowflake-blue"/>Cold</div>
             <div className="legend-item">
                 <FaFire size={30} className="fire-red"/>Hot</div>
+            <div className="legend-item">
+                <FaLeaf size={30} className="nonDairy"/>Non-Dairy</div>            
         </div>
     );
 
