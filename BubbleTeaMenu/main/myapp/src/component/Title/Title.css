@@ -1,38 +1,24 @@
-/* Title Card Styling */
-.title-frame {
-  position: fixed;
-  top: 30%;   /* Adjust the vertical distance from the top */
-  left: 7.5%;   /* Adjust the horizontal distance from the right */
-  background-color: #f0f0f0; /* Background color (white) */
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  z-index: 1001; /* Ensure it stays on top of other elements */
+.title-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    padding: 20px;
+    width: 7%;
+    padding-left:200px;
 }
 
-/* Add floating animation */
 .title-frame {
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-  }
-  animation: float 3s ease-in-out infinite;
-}
-
-/* Optional: Add rotation effect */
-.title-frame h2 {
-  font-size: 24px;
-  color: #333;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1001;
+    margin-left: auto;
 }
 
 @media (max-width: 768px) {
-  .title-frame {
-    top: 10px;
-    right: 10px;
-    padding: 10px;
-  }
+    .title-container {
+        justify-content: center; /* Re-center on mobile */
+        gap: 1rem;              /* Reduce spacing for smaller screens */
+    }
 }

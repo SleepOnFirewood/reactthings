@@ -6,7 +6,16 @@ function BubbleTeaContainer(props)
 {
     return(
         <div className='BubbleTeaContainer'>
-            <div className='top-cards'>
+            {props.children}
+ 
+        </div>
+    )
+
+}
+
+export default BubbleTeaContainer;
+
+           {/* <div className='top-cards'>
             <Card 
             title="Wintermelon Basil" 
             description="Fresh winter melon puree blended with basil leaves."
@@ -59,10 +68,4 @@ function BubbleTeaContainer(props)
             description="Fresh winter melon puree blended with basil leaves."
             price="$5.99"
             image='/images/boba.png'/>
-            </div>
-        </div>
-    )
-
-}
-
-export default BubbleTeaContainer;
+            </div> */}
