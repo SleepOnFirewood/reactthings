@@ -8,13 +8,14 @@ import TopCards from './component/TopCards/TopCards';
 import Card from './component/Card/Card';
 import BottomCards from './component/BottomCards/BottomCards';
 import LegendRow from './component/LegendRow/LegendRow';
+import Logo from './component/Logo/Logo';
 
 
 function App() {
   return (
     <div className="App">
       <Border>
-
+        <Logo image='/images/bubbleteabrewerlogo.png'/>
         <Top10Container>
           <Title>
               <span>Top 10</span>
