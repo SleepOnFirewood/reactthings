@@ -7,6 +7,7 @@ function Title(props) {
         <div className='title-frame'>
               {props.children[0]}
               {props.children[1]}
+              {props.children[2]}
         </div>
       </div>
     );

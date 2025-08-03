@@ -17,10 +17,19 @@
 }
 
 .title-frame h2 {
-    display: inline;
+    display: block;
     font-size: 40px;
     font-weight: bold;
-    color: blue;
+    color: black;
+    white-space: nowrap;
+}
+
+.title-frame span {
+    display: block;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {

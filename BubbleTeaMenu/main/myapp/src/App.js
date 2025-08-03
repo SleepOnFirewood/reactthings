@@ -7,6 +7,7 @@ import Top10Container from './component/Top10Container/Top10Container';
 import TopCards from './component/TopCards/TopCards';
 import Card from './component/Card/Card';
 import BottomCards from './component/BottomCards/BottomCards';
+import LegendRow from './component/LegendRow/LegendRow';
 
 
 function App() {
@@ -16,8 +17,10 @@ function App() {
 
         <Top10Container>
           <Title>
-              <h2>Top 10</h2>
+              <span>Top 10</span>
               <span>Favourites</span>
+            <LegendRow>
+            </LegendRow>
           </Title>
           <BubbleTeaContainer>
             <TopCards>
@@ -74,6 +77,7 @@ function App() {
             price="$5.99"
             image='/images/boba.png'/>
             </BottomCards>
+
           </BubbleTeaContainer>
         </Top10Container>
       </Border>
