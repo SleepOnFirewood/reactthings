@@ -1,11 +1,11 @@
 .title-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     gap: 2rem;
     padding: 20px;
     width: 7%;
-    background-color: black;
+    padding-left:200px;
 }
 
 .title-frame {
@@ -13,7 +13,12 @@
     padding: 15px;
     border-radius: 8px;
     z-index: 1001;
-    border-color: black;
-    max-width: 300px; /* Adjust based on your design */
+    margin-left: auto;
 }
 
+@media (max-width: 768px) {
+    .title-container {
+        justify-content: center; /* Re-center on mobile */
+        gap: 1rem;              /* Reduce spacing for smaller screens */
+    }
+}
