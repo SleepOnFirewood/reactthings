@@ -1,19 +1,26 @@
 .title-container {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: flex-start;
     gap: 2rem;
     padding: 20px;
-    width: 7%;
-    padding-left:200px;
+    width: 15%;
+    padding-left:100px;
+    padding-right: 100px;
 }
 
 .title-frame {
     background-color: #f0f0f0;
-    padding: 70px;
     border-radius: 8px;
     z-index: 1001;
-    margin-right: 30%;
+    width: 800px;
+    height: 200px;
+}
+
+.title-frame h2 {
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+    color: blue;
 }
 
 @media (max-width: 768px) {

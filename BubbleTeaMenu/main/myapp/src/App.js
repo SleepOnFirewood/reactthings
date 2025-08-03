@@ -15,8 +15,9 @@ function App() {
       <Border>
 
         <Top10Container>
-          <Title
-          title ="Top 10 Favourites">
+          <Title>
+              <h2>Top 10</h2>
+              <span>Favourites</span>
           </Title>
           <BubbleTeaContainer>
             <TopCards>
