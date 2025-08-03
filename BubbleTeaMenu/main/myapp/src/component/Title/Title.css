@@ -9,6 +9,7 @@
     padding-left:100px;
     padding-right: 100px;
     font-family: 'Fredoka', sans-serif;
+    border-color: #5a1e84;
     
 }
 
@@ -18,8 +19,52 @@
     width: 800px;
     height: 200px;
     background-color: #ffe4ec;
-    border: 4px solid #5a1e84;
+    position: relative;
+    border-style: solid;
+    border-color:#5a1e84;
+    overflow: hidden;
 }
+
+.title-frame::before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: #ff00cc;
+    inset: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border-radius:12px;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        #ff00cc 50%,
+        transparent 100%
+    );
+    animation: moveGlow 2s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+    mix-blend-mode: screen; 
+}
+
+.title-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #8a3ae6, 0 0 25px #1100ff;
+    z-index: 0;
+}
+
+@keyframes moveGlow {
+    0% {
+        left: -100%
+    }
+    100% {
+        left: 100%;
+    }
+} 
 
 .title-frame h2 {
     display: block;
