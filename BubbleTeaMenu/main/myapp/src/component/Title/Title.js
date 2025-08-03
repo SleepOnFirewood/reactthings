@@ -5,8 +5,9 @@ function Title(props) {
     return (
       <div className='title-container'>
         <div className='title-frame'>
-            {props.title && <h2>{props.title}</h2>}
-            {props.variation && <p>Variation: {props.variation}</p>}
+              {props.children[0]}
+              {props.children[1]}
+              {props.children[2]}
         </div>
       </div>
     );
