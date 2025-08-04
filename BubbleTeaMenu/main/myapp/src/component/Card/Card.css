@@ -36,31 +36,20 @@
     font-weight: bold;
 }
 
-.ranking-number-1 {
-    background-color: goldenrod; 
-    animation: snowflakeGlow 2s ease-in-out infinite;
+.ranking-number-1{
+    background-color: #FFA500;
+    animation: number1Glow 2s ease-in-out infinite;
 }
 
 @keyframes number1Glow {
     0% {
-        filter: drop-shadow(0 0 0px #38bdf8);
+        filter: drop-shadow(0 0 0px #FFA500);
     }
     50%{
-        filter: drop-shadow(0 0 8px #38bdf8);
+        filter: drop-shadow(0 0 8px #FFA500);
     }
     100%{
-        filter: drop-shadow(0 0 0px #38bdf8);
-    }
-}
-@keyframes snowflakeGlow {
-    0% {
-        filter: drop-shadow(0 0 0px #38bdf8);
-    }
-    50%{
-        filter: drop-shadow(0 0 8px #38bdf8);
-    }
-    100%{
-        filter: drop-shadow(0 0 0px #38bdf8);
+        filter: drop-shadow(0 0 0px #FFA500);
     }
 }
 
