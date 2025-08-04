@@ -59,3 +59,11 @@
 .ranking-number span {
     margin-right: 15px; 
 }
+
+/* Crown styling */
+.crown {
+    position: absolute;
+    top: 40px; /* Adjust based on your needs */
+    transform: translateX(-50%);
+    z-index: 2;
+}

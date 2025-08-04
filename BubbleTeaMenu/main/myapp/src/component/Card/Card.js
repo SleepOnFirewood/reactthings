@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css';
+import { FaCrown } from 'react-icons/fa';
 
 function Card(props) {
     return (
@@ -7,6 +8,12 @@ function Card(props) {
 
         {props.ranking && props.ranking.length > 0 && (
           <div className={`ranking-number ${props.ranking[0] === 1 ? 'ranking-number-1' : ''}`}>
+            {props.ranking[0] === 1 && (
+              <div className='crown'>
+                <FaCrown size={50}/>
+                </div>
+            )}
+            
             {props.ranking.map((number, index) => (
                 <span key={index}>{number}</span>
             ))}

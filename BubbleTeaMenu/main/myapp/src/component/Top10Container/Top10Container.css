@@ -1,9 +1,50 @@
 .Top10Container-Frame {
     display: flex;
-    justify-content: center;  /* Centers content horizontally */
+    justify-content: center;
     width: 100%;
-    align-items: center;      /* Centers content vertically */
+    align-items: center;
     padding: 20px;
     background: white;
-    height: 70vh;           /* Makes the container take full viewport height */
+    height: 70vh;
+    position: relative; /* Add this for positioning pseudo-elements */
+    overflow: hidden; /* Hide the wavy borders outside the container */
+}
+
+/* Top wave */
+.Top10Container-Frame::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #ff00cc; /* Wave color */
+    clip-path: 
+        polygon(0 0, 10% 0, 30% 6%, 40% -2%, 60% 8%, 90% 0, 100% 0),
+        polygon(0 0, 10% 0, 30% 6%, 40% -2%, 60% 8%, 90% 0, 100% 0);
+}
+
+/* Bottom wave */
+.Top10Container-Frame::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #ff00cc; /* Wave color */
+    clip-path:
+        polygon(0 100%, 10% 100%, 30% 94%, 40% 102%, 60% 92%, 90% 100%, 100% 100%),
+        polygon(0 0, 10% 0, 30% 6%, 40% -2%, 60% 8%, 90% 0, 100% 0);
+}
+
+/* Adjust the following properties to control the waves */
+.Top10Container-Frame::before,
+.Top10Container-Frame::after {
+    animation: waveEffect 3s infinite linear;
+}
+
+@keyframes waveEffect {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
 }
