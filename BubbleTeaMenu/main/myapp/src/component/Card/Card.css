@@ -38,6 +38,9 @@
 
 .ranking-number-1{
     background-color: #FFA500;
+    font-size: 30px; 
+    z-index: 1;
+    font-weight: bold;
     animation: number1Glow 2s ease-in-out infinite;
 }
 
