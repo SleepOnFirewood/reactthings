@@ -7,7 +7,7 @@ function Logo(props) {
         {props.image && (
           <img
             src={props.image}
-            className='card-image'
+            className='logo-image'
             alt={props.title}
             />
         )

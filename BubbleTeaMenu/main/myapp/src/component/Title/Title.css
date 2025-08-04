@@ -1,90 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
 
-.title-container {
-    display: flex;
-    justify-content: flex-start;
-    gap: 2rem;
-    padding: 20px;
-    width: 15%;
-    padding-left:100px;
-    padding-right: 100px;
-    font-family: 'Fredoka', sans-serif;
-    border-color: #5a1e84;
-    
-}
-
-.title-frame {
-    border-radius: 20px;
-    z-index: 1001;
-    width: 800px;
-    height: 200px;
-    background-color: #ffe4ec;
-    position: relative;
-    border-style: solid;
-    border-color:#5a1e84;
-    overflow: hidden;
-}
-
-.title-frame::before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-color: #ff00cc;
-    inset: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    padding: 4px;
-    border-radius:12px;
-    background: linear-gradient(
-        90deg,
-        transparent 0%,
-        #ff00cc 50%,
-        transparent 100%
-    );
-    animation: moveGlow 2s linear infinite;
-    z-index: 1;
-    pointer-events: none;
-    mix-blend-mode: screen; 
-}
-
-.title-frame::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 12px;
-    box-shadow: 0 0 15px #8a3ae6, 0 0 25px #1100ff;
-    z-index: 0;
-}
-
-@keyframes moveGlow {
-    0% {
-        left: -100%
-    }
-    100% {
-        left: 100%;
-    }
-} 
-
-.title-frame h2 {
-    display: block;
-    font-size: 40px;
-    font-weight: bold;
-    color: #5a1e84;
-    white-space: nowrap;
-}
-
-.title-frame span {
-    display: block;
-    font-size: 40px;
-    font-weight: bold;
-    color: #5a1e84;
-    white-space: nowrap;
-}
-
-@media (max-width: 768px) {
     .title-container {
-        justify-content: center; /* Re-center on mobile */
-        gap: 1rem;              /* Reduce spacing for smaller screens */
+        display: flex;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding: 20px;
+        width: 15%;
+        padding-left:100px;
+        padding-right: 100px;
+        font-family: 'Baloo 2';
+        border-color: #5a1e84;
+        overflow-x: auto;
+        top: 100px;
+        height: 700px;
     }
-}
+
+    .title-frame {
+        border-radius: 20px;
+        z-index: 1001;
+        min-width: 350px;
+        max-width: 95%;
+        top: -20px;
+        height: 300px;
+        background-color: #ffe4ec;
+        position: relative;
+        border-style: solid;
+        border-color:#5a1e84;
+        overflow: hidden;
+    }
+
+    .title-frame::before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-color: #ff00cc;
+        inset: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 4px;
+        border-radius:12px;
+        background: linear-gradient(
+            90deg,
+            transparent 0%,
+            #ff00cc 50%,
+            transparent 100%
+        );
+        animation: moveGlow 2s linear infinite;
+        z-index: 1;
+        pointer-events: none;
+        mix-blend-mode: screen; 
+    }
+
+    .title-frame::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 12px;
+        box-shadow: 0 0 15px #8a3ae6, 0 0 25px #1100ff;
+        z-index: 0;
+    }
+
+    @keyframes moveGlow {
+        0% {
+            left: -100%
+        }
+        100% {
+            left: 100%;
+        }
+    } 
+
+    .title-frame h2 {
+        display: block;
+        font-size: 70px;
+        font-weight: bold;
+        color: #5a1e84;
+        white-space: nowrap;
+    }
+
+    .title-frame span {
+        display: block;
+        font-size: 40px;
+        font-weight: bold;
+        color: #5a1e84;
+        white-space: nowrap;
+    }
+
+    @media (max-width: 768px) {
+        .title-container {
+            justify-content: center; /* Re-center on mobile */
+            gap: 1rem;              /* Reduce spacing for smaller screens */
+        }
+    }

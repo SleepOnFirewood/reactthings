@@ -7,11 +7,11 @@ function LegendRow(props)
     return(
         <div className='LegendRow-Frame'>
             <div className="legend-item">
-                <FaSnowflake size={30} className="snowflake-blue"/>Cold</div>
+                <FaSnowflake size={40} className="snowflake-blue"/>Cold</div>
             <div className="legend-item">
-                <FaFire size={30} className="fire-red"/>Hot</div>
+                <FaFire size={40} className="fire-red"/>Hot</div>
             <div className="legend-item">
-                <FaLeaf size={30} className="nonDairy"/>Non-Dairy</div>            
+                <FaLeaf size={40} className="nonDairy"/>Non-Dairy</div>            
         </div>
     );
 
