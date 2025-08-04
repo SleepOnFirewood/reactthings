@@ -10,9 +10,27 @@ import BottomCards from './component/BottomCards/BottomCards';
 import LegendRow from './component/LegendRow/LegendRow';
 import Logo from './component/Logo/Logo';
 import LogoTitle from './component/LogoTitle/LogoTitle';
+import CardList from './component/CardList/CardList';
 
 
 function App() {
+  const topCards = [
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [1] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [2] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [3] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [4] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [5] }
+  ]
+
+    const bottomCards = [
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [6] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [7] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [8] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [9] },
+    { title: "Wintermelon Basil", description: "Fresh winter melon puree blended with basil leaves.", price: "$5.99", image: '/images/boba.png', ranking: [10] },
+  ]
+
+
   return (
     <div className="App">
       <Border>
@@ -27,60 +45,10 @@ function App() {
           </Title>
           <BubbleTeaContainer>
             <TopCards>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'
-            ranking= {[1]}/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'
-            ranking= {[2]}/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
+              <CardList cards={topCards} />
             </TopCards>
             <BottomCards>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
-              <Card 
-            title="Wintermelon Basil" 
-            description="Fresh winter melon puree blended with basil leaves."
-            price="$5.99"
-            image='/images/boba.png'/>
+              <CardList cards={bottomCards} />
             </BottomCards>
 
           </BubbleTeaContainer>

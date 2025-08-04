@@ -4,11 +4,11 @@ import './Card.css';
 function Card(props) {
     return (
       <div className='card-frame'>
-        {props.ranking && (
-          <div className="ranking-number">
+        {props.ranking && props.ranking.length > 0 && (
+          <div className={`ranking-number ${props.ranking[0] === 1 ? 'ranking-number-1' : ''}`}>
             {props.ranking.map((number, index) => (
-                        <span key={index}>{number}</span>
-                    ))}
+                <span key={index}>{number}</span>
+            ))}
             </div>
         )}
         {props.image && (

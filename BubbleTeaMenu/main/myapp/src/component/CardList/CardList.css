@@ -1,0 +1,5 @@
+.card-list {
+    display: flex;
+    gap: 20px; /* Space between cards */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+}
