@@ -1,0 +1,6 @@
+.displayContainer-Frame {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    min-height: 50vh;
+}

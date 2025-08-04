@@ -11,6 +11,8 @@ import LegendRow from './component/LegendRow/LegendRow';
 import Logo from './component/Logo/Logo';
 import LogoTitle from './component/LogoTitle/LogoTitle';
 import CardList from './component/CardList/CardList';
+import Ads from './component/Ads/Ads';
+import DisplayContainer from './component/DisplayContainer/DisplayContainer';
 
 
 function App() {
@@ -37,12 +39,15 @@ function App() {
         <Logo image='/images/bubbleteabrewerlogo.png'/>
         <LogoTitle>BubbleTea Brewers</LogoTitle>
         <Top10Container>
+          <DisplayContainer>
           <Title>
               <span>Top 10</span>
               <span>Favourites</span>
             <LegendRow>
             </LegendRow>
           </Title>
+          <Ads image='/images/bubbletea_ad.png' />
+          </DisplayContainer>
           <BubbleTeaContainer>
             <TopCards>
               <CardList cards={topCards} />
