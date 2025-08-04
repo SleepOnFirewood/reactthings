@@ -4,6 +4,13 @@ import './Card.css';
 function Card(props) {
     return (
       <div className='card-frame'>
+        {props.ranking && (
+          <div className="ranking-number">
+            {props.ranking.map((number, index) => (
+                        <span key={index}>{number}</span>
+                    ))}
+            </div>
+        )}
         {props.image && (
           <img
             src={props.image}

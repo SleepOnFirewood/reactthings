@@ -23,3 +23,18 @@
     object-fit: contain;  /* Maintains aspect ratio while covering the area */
     border-radius: 8px 8px 0 0; /* Rounded top corners */
 }
+
+.ranking-number {
+    position: relative;
+    top: -20px; /* Adjust this value to position the number above the card */
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 18px; /* Adjust based on your desired size */
+    z-index: 1; /* Ensures the number appears above other elements */
+}
+
+.ranking-number span {
+    margin-right: 15px; /* Space between numbers if there are multiple rankings */
+}

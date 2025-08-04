@@ -31,12 +31,14 @@ function App() {
             title="Wintermelon Basil" 
             description="Fresh winter melon puree blended with basil leaves."
             price="$5.99"
-            image='/images/boba.png'/>
+            image='/images/boba.png'
+            ranking= {[1]}/>
               <Card 
             title="Wintermelon Basil" 
             description="Fresh winter melon puree blended with basil leaves."
             price="$5.99"
-            image='/images/boba.png'/>
+            image='/images/boba.png'
+            ranking= {[2]}/>
               <Card 
             title="Wintermelon Basil" 
             description="Fresh winter melon puree blended with basil leaves."
