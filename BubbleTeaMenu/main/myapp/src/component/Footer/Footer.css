@@ -1,0 +1,44 @@
+
+.bubble-tea-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.options-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0 15px;
+    margin-top: 5px;
+}
+
+.option-section {
+    min-width: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.option-section h3 {
+    text-align: center;
+    margin-bottom: 1px;
+    margin: 0; /* Remove both top and bottom margins */
+}
+
+/* Toppings List Styles */
+.toppings-list {
+    list-style: none;
+    padding-left: 0; 
+    column-count: 4; 
+}
+
+.toppings-list li {
+    margin-bottom: 1px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+}
