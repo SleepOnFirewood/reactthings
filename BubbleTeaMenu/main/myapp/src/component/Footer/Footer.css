@@ -1,5 +1,5 @@
 
-.bubble-tea-section {
+.footer-section {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -16,7 +16,7 @@
     margin-top: 5px;
 }
 
-.option-section {
+.toppings-section {
     min-width: 200px;
     background-color: white;
     padding: 5px;
@@ -24,7 +24,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.option-section h3 {
+.toppings-section h3 {
     text-align: center;
     margin-bottom: 1px;
     margin: 0; /* Remove both top and bottom margins */

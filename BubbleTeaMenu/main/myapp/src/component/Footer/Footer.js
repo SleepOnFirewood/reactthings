@@ -4,10 +4,10 @@ import './Footer.css'
 function Footer(props)
 {
     return (
-        <div className="bubble-tea-section">
+        <div className="footer-section">
             <div className="options-container">
                 {/* Toppings Section */}
-                <div className="option-section">
+                <div className="toppings-section">
                     <h3>Toppings</h3>
                     <ul className="toppings-list">
                         <li>Mini Mochi</li>
