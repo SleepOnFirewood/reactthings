@@ -4,10 +4,10 @@ import './Footer.css'
 function Footer(props)
 {
     return (
-        <div className="bubble-tea-section">
+        <div className="footer-section">
             <div className="options-container">
                 {/* Toppings Section */}
-                <div className="option-section">
+                <div className="toppings-section">
                     <h3>Toppings</h3>
                     <ul className="toppings-list">
                         <li>Mini Mochi</li>
@@ -29,6 +29,15 @@ function Footer(props)
                         <li>Yogurt Popping Pearl</li>
                         <li>Strawberry Popping Peral</li>
                         <li>Lychee Popping Pearl</li>
+                    </ul>
+                </div>
+                <div className="sugar-section">
+                    <h3>Sugar Levels</h3>
+                    <ul className="sugar-list">
+                        <li>25%</li>
+                        <li>50%</li>
+                        <li>75%</li>
+                        <li>100%</li>
                     </ul>
                 </div>
             </div>
