@@ -31,6 +31,15 @@ function Footer(props)
                         <li>Lychee Popping Pearl</li>
                     </ul>
                 </div>
+                <div className="sugar-section">
+                    <h3>Sugar Levels</h3>
+                    <ul className="sugar-list">
+                        <li>25%</li>
+                        <li>50%</li>
+                        <li>75%</li>
+                        <li>100%</li>
+                    </ul>
+                </div>
             </div>
         </div>
     );
