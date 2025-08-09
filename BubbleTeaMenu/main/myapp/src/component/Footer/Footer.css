@@ -73,3 +73,126 @@
     font-size: x-large;
     line-height: 70px;
 }
+
+.legend-section {
+    min-width: 200px;
+    background-color: white;
+    padding-left: 5px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+.legend-section h3 {
+    text-align: center;
+    margin-bottom: 1px;
+    margin: 0; 
+}
+
+.legend-list {
+    list-style: none;
+    padding-top: 7px;
+    padding-left: 30px; 
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    padding-right: 30px; 
+}
+
+.legend-list li {
+    margin-bottom: 1px; /* Space between items */
+    display: block; /* Ensure each item takes full width and height */
+}
+
+.legend-list li:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last item if needed */
+}
+
+.legend-list li {
+    margin-bottom: 1px; /* Space between items */
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Space between icon container and text */
+}
+
+.snowflake-blue {
+    padding-top: 6px;
+    padding-left: 6px;
+    color: lightblue;
+    display: block;
+    animation: snowflakeGlow 2s ease-in-out infinite;
+}
+
+@keyframes snowflakeGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #38bdf8);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+}
+
+.fire-red {
+    padding-top: 6px;
+    padding-left: 6px;
+    color: lightsalmon;
+    display: block;
+    animation: fireGlow 2s ease-in-out infinite;
+}
+
+@keyframes fireGlow {
+    0% {
+        filter: drop-shadow(0 0 0px lightsalmon);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px lightsalmon);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px lightsalmon);
+    }
+}
+
+.nonDairy {
+    color: rgb(66, 248, 187);
+    padding-top: 6px;
+    padding-left: 6px;
+    display: block;
+    animation: greenGlow 2s ease-in-out infinite;
+}
+
+@keyframes greenGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #38bdf8);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #38bdf8);
+    }
+}
+
+.lemon-yellow {
+    padding-top: 6px;
+    padding-left: 6px;
+    color: yellow;
+    display: block;
+    animation: yellowGlow 2s ease-in-out infinite;
+}
+
+@keyframes yellowGlow {
+    0% {
+        filter: drop-shadow(0 0 0px orange);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px orange);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px orange);
+    }
+}

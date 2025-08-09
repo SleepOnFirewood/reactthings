@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import { FaSnowflake, FaFire, FaLeaf, FaLemon } from 'react-icons/fa';
 
 function Footer(props)
 {
@@ -38,6 +39,34 @@ function Footer(props)
                         <li>50%</li>
                         <li>75%</li>
                         <li>100%</li>
+                    </ul>
+                </div>
+                <div className="legend-section">
+                    <ul className="legend-list">
+                        <li>
+                            <div class="icon-container">
+                                <FaSnowflake size={30} className="snowflake-blue"/>
+                            </div>
+                            Cold
+                        </li>
+                        <li>
+                            <div class="icon-container">
+                                <FaFire size={30} className="fire-red"/>
+                            </div>
+                            Warm
+                        </li>
+                        <li>
+                            <div class="icon-container">
+                                <FaLeaf size={30} className="nonDairy"/>
+                            </div>
+                            Non-Dairy
+                        </li>
+                        <li>
+                            <div class="icon-container">
+                                <FaLemon size={30} className="lemon-yellow"/>
+                            </div>
+                            Contains Real Fruit
+                        </li>
                     </ul>
                 </div>
             </div>
