@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css'
-import { FaSnowflake, FaFire, FaLeaf, FaLemon } from 'react-icons/fa';
+import { FaSnowflake, FaFire, FaLeaf, FaLemon, FaRegStickyNote } from 'react-icons/fa';
 
 function Footer(props)
 {
@@ -9,7 +9,7 @@ function Footer(props)
             <div className="options-container">
                 {/* Toppings Section */}
                 <div className="toppings-section">
-                    <h3>Toppings</h3>
+                    <h2>Toppings</h2>
                     <ul className="toppings-list">
                         <li>Mini Mochi</li>
                         <li>Red Bean</li>
@@ -33,7 +33,7 @@ function Footer(props)
                     </ul>
                 </div>
                 <div className="sugar-section">
-                    <h3>Sugar Levels</h3>
+                    <h2>Sugar Levels</h2>
                     <ul className="sugar-list">
                         <li>25%</li>
                         <li>50%</li>
@@ -66,6 +66,16 @@ function Footer(props)
                                 <FaLemon size={30} className="lemon-yellow"/>
                             </div>
                             Contains Real Fruit
+                        </li>
+                    </ul>
+                </div>
+                <div className="disclaimer-section">
+                    <ul className="disclaimer-list">
+                        <li>
+                            <div class="icon-container">
+                            <FaRegStickyNote size={50}/>
+                            </div>
+                            Prices do not include Toppings
                         </li>
                     </ul>
                 </div>

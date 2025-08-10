@@ -4,7 +4,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f8f9fa;
+    background-color: #5a1e84;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -18,42 +18,46 @@
 
 .toppings-section {
     min-width: 200px;
-    background-color: white;
+    background-color: #5a1e84;
     padding: 5px;
     border-radius: 8px;
+    margin: 5px;
+    border-color: yellow;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.toppings-section h3 {
+.toppings-section h2 {
     text-align: center;
     margin-bottom: 1px;
     margin: 0; 
+    color: white;
 }
 
 .toppings-list {
     list-style: none;
     padding-left: 0; 
     column-count: 4; 
+    font-size: 20px;
 }
 
 .toppings-list li {
-    margin-bottom: 1px;
+    margin-bottom: 2px;
     border-radius: 4px;
-    background-color: #f5f5f5;
+    background-color: #ffe4ec;
 }
 
 .sugar-section {
     min-width: 200px;
-    background-color: white;
+    background-color: #5a1e84;
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.sugar-section h3 {
+.sugar-section h2 {
     text-align: center;
-    margin-bottom: 1px;
     margin: 0; 
+    color: white;
 }
 
 .sugar-list {
@@ -61,28 +65,43 @@
     padding-left: 0; 
     column-count: 4; 
     font-size: 20px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .sugar-list li {
     text-align: center;
     border-radius: 50%;
-    background-color: #f5f5f5;
+    background-color: #ffe4ec;
     height: 70px;
     width: 70px;
     font-size: x-large;
     line-height: 70px;
+    color: #e4205a;
+    border-color: #e4205a;
+    animation: pinkGlow 2s ease-in-out infinite;
+}
+
+@keyframes  pinkGlow {
+    0% {
+        filter: drop-shadow(0 0 0px #e4205a);
+    }
+    50%{
+        filter: drop-shadow(0 0 8px #e4205a);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #e4205a);
+    }
 }
 
 .legend-section {
-    min-width: 200px;
-    background-color: white;
-    padding-left: 5px;
+    min-width: 300px;
+    background-color: #5a1e84;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 0;
+    padding-left: 40px; 
     margin-bottom: 0;
-    
+    color: white;
 }
 
 .legend-section h3 {
@@ -93,9 +112,9 @@
 
 .legend-list {
     list-style: none;
-    padding-top: 7px;
-    padding-left: 30px; 
-    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 40px; 
+    font-size: 25px;
     margin-top: 7px;
     margin-bottom: 0;
     padding-right: 30px; 
@@ -116,6 +135,43 @@
     align-items: center; /* Center vertically */
     gap: 10px; /* Space between icon container and text */
 }
+
+.disclaimer-section {
+    background-color: #5a1e84;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.disclaimer-list {
+    list-style: none;
+    padding-top: 60px;
+    padding-left: 50px; 
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    padding-right: 30px; 
+    margin-left: 30px;
+    color: white;
+}
+
+.disclaimer-list li {
+    margin-bottom: 1px; /* Space between items */
+    display: block; /* Ensure each item takes full width and height */
+}
+
+.disclaimer-list li:last-child {
+    margin-bottom: 0; /* Remove bottom margin for the last item if needed */
+}
+
+.disclaimer-list li {
+    margin-bottom: 1px; /* Space between items */
+    display: flex; /* Use Flexbox for alignment */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Space between icon container and text */
+}
+
 
 .snowflake-blue {
     padding-top: 6px;
