@@ -5,7 +5,9 @@ function MenuContainer(props)
 {
     return(
         <div className='menuContainer-Frame'>
-            {props.children}
+            <div className="option-Title"></div>
+            {props.title && <h2>{props.title}</h2>}
+            {props.price && <h2>{props.price}</h2>}
         </div>
     )
 

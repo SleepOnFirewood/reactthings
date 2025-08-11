@@ -13,6 +13,7 @@ import CardList from '../component/CardList/CardList';
 import Ads from '../component/Ads/Ads';
 import DisplayContainer from '../component/DisplayContainer/DisplayContainer';
 import Footer from '../component/Footer/Footer';
+import MenuContainer from '../component/MenuContainer/MenuContainer';
 
 function SecondPage() {
     return (
@@ -20,6 +21,9 @@ function SecondPage() {
         <Logo image='/images/bubbleteabrewerlogo.png'/>
         <LogoTitle>BubbleTea Brewers</LogoTitle>
         <Top10Container>
+          <MenuContainer title={"dragon"} price={"$1.00"}>
+            
+          </MenuContainer>
         </Top10Container>
         <Footer></Footer>
       </Border>
