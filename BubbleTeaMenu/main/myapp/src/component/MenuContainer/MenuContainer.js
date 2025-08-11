@@ -1,16 +1,13 @@
 import React from 'react';
 import './MenuContainer.css'
 
-function MenuContainer(props)
-{
-    return(
-        <div className='menuContainer-Frame'>
-            <div className="option-Title"></div>
-            {props.title && <h2>{props.title}</h2>}
-            {props.price && <h2>{props.price}</h2>}
+function MenuContainer({ title, price }) {
+    return (
+        <div className='menu-item'>
+            {title && <h3>{title}</h3>}
+            {price && <p>{price}</p>}
         </div>
     )
-
 }
 
 export default MenuContainer;

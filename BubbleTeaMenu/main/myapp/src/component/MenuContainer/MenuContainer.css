@@ -1,21 +1,52 @@
-.menuContainer-Frame{
+/* Style for the page container */
+.page-container {
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    background-color: #f0f0f0;
-    max-width: 300px;     
-    height: auto;   
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto;
 }
 
-.option-Title {
-    position: relative;
-    top: -20px; 
-    background-color: #5a1e84;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 16px; 
-    z-index: 1;
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.menu-section h2 {
+    margin-top: 0;
+    color: #5a1e84;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.menu-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
 }
