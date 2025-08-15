@@ -1,0 +1,63 @@
+.page-container {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: (2, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+    width: 100%; 
+}
+
+.menu-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    min-height: 200px; 
+}
+
+.menu-section h2 {
+    margin-top: 0;
+    color: #5a1e84;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-items-container {
+    display: grid;
+    gap: 15px;
+    height: calc(100% - 60px);
+    padding: 10px;
+}
+
+.menu-item {
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.menu-item h3 {
+    margin-top: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.menu-item p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #666;
+    padding:0;
+}
+
+/* Optional: Add this for better column distribution */
+.menu-items-container.grid-2col {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.menu-items-container.grid-3col {
+    grid-template-columns: repeat(3, 1fr);
+}

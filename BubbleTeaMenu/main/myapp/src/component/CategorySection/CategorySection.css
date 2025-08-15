@@ -1,0 +1,21 @@
+.category-section
+{
+    background: #f9f9f9f9;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.category-section h2
+{
+    margin-bottom: 8px;
+    font-size: 1.2em;
+}
+
+.category-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.category-section li {
+    margin: 4px;
+}
