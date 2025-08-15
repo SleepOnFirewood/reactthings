@@ -5,31 +5,24 @@ import Logo from '../component/Logo/Logo';
 import LogoTitle from '../component/LogoTitle/LogoTitle';
 import Footer from '../component/Footer/Footer';
 import MenuContainer from '../component/MenuContainer/MenuContainer';
-import { menuData } from '../component/MenuContainer/MenuItems';
+import { categories } from '../component/MenuContainer/MenuItems';
+import CategorySection from '../component/CategorySection/CategorySection';
+import './SecondPage.css'
+
 
 function SecondPage() {
-    const menuCategories = Object.entries(menuData);
     return (
+      
       <Border>
         <Logo image='/images/bubbleteabrewerlogo.png'/>
         <LogoTitle>BubbleTea Brewers</LogoTitle>
         <Top10Container>
-            <div className="menu-grid">
-                {menuCategories.map(([category, items]) => (
-                    <div key={category} className="menu-section">
-                        <h2>{category.charAt(0).toUpperCase() + category.slice(1)}</h2>
-                        
-                        <div className="menu-items-container">
-                            {items.map((item) => (
-                                <MenuContainer
-                                    key={item.name}
-                                    title={item.name}
-                                    price={item.price}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                ))}
+            <div className="second-page">
+                {categories.map((cat)=> 
+                (<CategorySection 
+                key={cat.id} 
+                title={cat.title} 
+                items={cat.items}/>))}
             </div>
         </Top10Container>
         <Footer></Footer>
