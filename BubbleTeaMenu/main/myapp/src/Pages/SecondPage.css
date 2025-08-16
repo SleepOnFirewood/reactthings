@@ -10,7 +10,8 @@
 .category-section {
     flex: 0 1 auto;
     min-width: 250px;
-    max-width: 500px;
+    max-width: 600px;
     border: 2px solid #ddd;
     padding: 12px;
+    margin: 0 auto;
 }

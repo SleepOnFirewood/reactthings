@@ -2,6 +2,7 @@
         {
             id: 'smoothies',
             price: '$7.55',
+            image: '/images/boba.png',
             title: 'Smoothies',
             items: 
             [
@@ -27,6 +28,7 @@
         {
             id: 'milk',
             price: '$7.00',
+            image: '/images/boba.png',
             title: 'Milk Teas',
             items:
              [
@@ -76,6 +78,7 @@
         {
             id: 'special',
             price: '$7.60',
+            image: '/images/boba.png',
             title: 'Special Series',
             items: ['Chocolate',
                     'Pina Colada',
@@ -90,6 +93,7 @@
         {
             id: 'cheesecake',
             price: '$7.95',
+            image: '/images/boba.png',
             title: 'Cheesecake Series',
             items: ['Cantaloupe Cheesecake',
                     'Honeydew Cheesecake',
@@ -102,6 +106,7 @@
         {
             id: 'float',
             price: '$8.00',
+            image: '/images/boba.png',
             title: 'Float Series',
             items: ['Mango Float', 'Peach Float', 'Taro Float']
         },

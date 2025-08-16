@@ -49,8 +49,9 @@ return(
 
                 </ul>
             ))}
+            <div className="category-picture"> <img src={image} alt='bubble-image'/></div>
         </div>
-        <div className="category-picture"> <img src={image} alt='bubble-image'/></div>
+        
     </section>
 );
 }
