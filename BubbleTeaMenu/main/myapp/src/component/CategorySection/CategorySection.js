@@ -1,5 +1,6 @@
 import React from 'react';
 import './CategorySection.css'
+import { PiDropSimple } from 'react-icons/pi';
 
 
 function chunkIntoColumns(items, itemsPerCol, minColumns=2)
@@ -26,7 +27,7 @@ function chunkIntoColumns(items, itemsPerCol, minColumns=2)
 
 export default CategorySection;
 
-function CategorySection({ title, price, items = [], itemsPerColumn =5, minColumns = 2 }) {
+function CategorySection({ title, price, image, items = [], itemsPerColumn =4, minColumns = 2 }) {
 
     const columns = chunkIntoColumns(items, itemsPerColumn, minColumns);
 return(
@@ -49,6 +50,7 @@ return(
                 </ul>
             ))}
         </div>
+        <div className="category-picture"> <img src={image} alt='bubble-image'/></div>
     </section>
 );
 }

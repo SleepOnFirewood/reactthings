@@ -1,10 +1,11 @@
     export const categories = [
         {
             id: 'smoothies',
-            price: '$4.99',
+            price: '$7.55',
             title: 'Smoothies',
             items: 
-            ['Avocado',
+            [
+             'Avocado',
              'Avocago',
              'Cantaloupe',
              'Cherry Berry',
@@ -20,31 +21,88 @@
              'Passion Fruit Mango',
              'Triple B',
              'Pomegranate Strawberry',
-             'Mango Strawberry Paradise']   
+             'Mango Strawberry Paradise',
+            ]   
         },
         {
             id: 'milk',
+            price: '$7.00',
             title: 'Milk Teas',
-            items: ['sdfds','avacado','avago','avacado','avago','avacado']
+            items:
+             [
+             'Avocado',
+             'Cake Milk Tea',
+             'Chocolate',
+             'Coconut Berry',
+             'Earl Grey',
+             'Jasmine',
+             'Mango',
+             'Mango Yakult',
+             'Matcha',
+             'Cherry Berry',
+             'Strawberry',
+             'Taro',
+             'Wintermelon',
+             'Yakult',
+             'Sun Moon Lake Tea',
+             'Taiwanese Milk Tea',
+             'Barako Coffee Milk Tea',
+            ]   
         },
         {
-            id: 'smoothies',
-            title: 'smoothies',
-            items: ['avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago']
+            id: 'chocolate',
+            price: '$8.25',
+            title: 'Chocolate Series',
+            image: '/images/boba.png',
+            items:
+             [
+             'Banana Chocolate Explosion',
+             'Banana Split',
+             'Black Forest',
+             'Ferrard Hazelnut',
+             'Malty Maltesers',
+             'Oreo Blast',
+             'Strawberry White Chocolate Swirl',
+             'Tiramisu Frappe',
+             'White Chocolate Pretzels',
+                  'Taro',
+             'Wintermelon',
+             'Yakult',
+             'Sun Moon Lake Tea',
+             'Taiwanese Milk Tea',
+             'Barako Coffee Milk Tea',
+            ]   
         },
         {
-            id: 'milk',
-            title: 'Milk Teas',
-            items: ['sdfds','avacado','avago','avacado','avago','avacado']
+            id: 'special',
+            price: '$7.60',
+            title: 'Special Series',
+            items: ['Chocolate',
+                    'Pina Colada',
+                    'Dole Whip',
+                    'Coconut',
+                    'Mango Coco',
+                    'Taro',
+                    'Matcha',
+                    'Taro Coco', 
+                    'Ube Passion Fruit']
         },
         {
-            id: 'smoothies',
-            title: 'smoothies',
-            items: ['avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado','avago','avacado']
+            id: 'cheesecake',
+            price: '$7.95',
+            title: 'Cheesecake Series',
+            items: ['Cantaloupe Cheesecake',
+                    'Honeydew Cheesecake',
+                    'Purple Taro Cheesecake',
+                    'Avocado Cheesecake',
+                    'Matcha Cheesecake',
+                    'Mango Lime Cheesecake',
+                    'Strawberry Cheesecake',]
         },
         {
-            id: 'milk',
-            title: 'Milk Teas',
-            items: ['sdfds','avacado','avago','avacado','avago','avacado']
+            id: 'float',
+            price: '$8.00',
+            title: 'Float Series',
+            items: ['Mango Float', 'Peach Float', 'Taro Float']
         },
     ]
