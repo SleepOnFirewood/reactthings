@@ -21,8 +21,10 @@ function SecondPage() {
                 {categories.map((cat)=> 
                 (<CategorySection 
                 key={cat.id} 
+                price={cat.price}
                 title={cat.title} 
-                items={cat.items}/>))}
+                items={cat.items}
+                image={cat.image}/>))}
             </div>
         </Top10Container>
         <Footer></Footer>
