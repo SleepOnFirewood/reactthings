@@ -6,12 +6,31 @@
     width: 100%;
 }
 
+.category-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
 .category-title
 {
     margin-bottom: 6px;
     font-size: 1.1rem;
     font-weight: 800;
     color: #4b216e
+}
+
+.category-price{
+    background-color: #5a1e84;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .items-list

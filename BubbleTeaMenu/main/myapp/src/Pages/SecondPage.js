@@ -21,6 +21,7 @@ function SecondPage() {
                 {categories.map((cat)=> 
                 (<CategorySection 
                 key={cat.id} 
+                price={cat.price}
                 title={cat.title} 
                 items={cat.items}/>))}
             </div>
